@@ -7,8 +7,8 @@ class GuessingGame {
     }
 
     guess() {
-        this.index = Math.floor((this.arr.length - 1) / 2);
-        this.result = this.arr[Math.floor((this.arr.length - 1) / 2)];
+        this.index = Math.floor((this.arr.length) / 2);
+        this.result = this.arr[this.index];
         return this.result;
     }
 
@@ -18,7 +18,6 @@ class GuessingGame {
     }
 
     greater() {
-        // this.arr = this.arr.slice(this.index - 1);
         this.arr = this.arr.slice(this.index);
     }
 }
