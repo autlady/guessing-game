@@ -7,11 +7,11 @@ class GuessingGame {
     }
 
     guess() {
-        this.index = Math.floor((this.arr.length) / 2);
+        // this.index = Math.floor((this.arr.length) / 2);
+        this.index = Math.ceil((this.arr.length) / 2);
         this.result = this.arr[this.index];
         return this.result;
     }
-
 
     lower() {
         this.arr = this.arr.slice(0, this.index);
