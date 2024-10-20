@@ -11,7 +11,7 @@ class GuessingGame {
 
 
     lower() {
-        this._arr.slice(nextIdx);
+        this._arr.slice(this._result);
     }
 
     greater() {
